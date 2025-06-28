@@ -1,16 +1,23 @@
-# sms_app
+# Türkçe SMS Spam Tespiti için BERT Tabanlı Mobil Uygulama
 
-A new Flutter project..
+Bu proje, Flutter kullanılarak geliştirilmiş mobil bir uygulamadır. Gelen SMS mesajlarını gerçek zamanlı olarak “SPAM” veya “NORMAL” olarak sınıflandırmak için Hugging Face üzerinde barındırılan `BaranKanat/BerTurk-SpamSMS` BERT modelini API aracılığıyla çağırır.
 
-## Getting Started
+## Özellikler
 
-This project is a starting point for a Flutter application.
+* **Gerçek Zamanlı SMS Analizi**: Uygulama açıkken ya da arka planda gelen SMS’leri otomatik olarak sınıflandırır.
+* **Çift Platform Desteği**: Tek kod tabanıyla hem Android hem de iOS desteği.
+* **Gizlilik ve Güvenlik**: AES şifreleme ile mesaj içeriği cihaz üzerinde şifrelenerek API’ye iletilir.
+* **Özelleştirilebilir Arayüz**: Tema, yazı tipi boyutu ve renk seçenekleri.
+* **Performans Optimizasyonu**: Daha önce sınıflandırılmış mesajlar lokal cache’de saklanarak gereksiz API çağrıları engellenir.
 
-A few resources to get you started if this is your first Flutter project:
+## Veri Seti
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Bu veri seti, spam veya normal olarak etiketlenmiş Türkçe SMS mesajlarından oluşmaktadır. Türkiye’nin farklı bölgelerinde yaşayan çeşitli yaş gruplarındaki insanlardan toplanmıştır.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+> Eğer bu veri setini kullanırsanız, lütfen aşağıdaki makaleyi referans gösterin:
+> Karasoy, O., Ballı, S. (2021). Türkçe Dilinde Derin Metin Analizi ve Derin Öğrenme Yöntemleri ile Spam SMS Tespiti. *Arabian Journal for Science and Engineering*. [https://doi.org/10.1007/s13369-021-06187-1](https://doi.org/10.1007/s13369-021-06187-1)
+
+## Katkıda Bulunanlar
+
+* **Nurullah Yıldırım** — [LinkedIn](https://www.linkedin.com/in/nurullah1yıldırım/)
+* **Baran Kanat** — [LinkedIn](https://www.linkedin.com/in/baran-kanat/)
